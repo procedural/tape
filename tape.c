@@ -38,3 +38,4 @@ main
 // Binary numbers start with ;
 // For example:
 // ; 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+// No opcode is allowed to jump except opcode 1
