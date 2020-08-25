@@ -27,6 +27,7 @@ main
 .loopCount 3
 .jump 1
 // The end comments don't take heap space
+// The program starts at address 1
 // Every line is a 64-bit value
 // Spaces are optional
 // . is the start of named address declaration
