@@ -17,7 +17,7 @@ _forPostInc loopIndex C
 0
 0
 ```
-(an equivalent in C: for (;; loopIndex[0] += 1))
+(an equivalent in C: `for (;; loopIndex[0] += 1)`)
 ```c
 _forPostDec loopIndex C
 0
@@ -27,7 +27,7 @@ _forPostDec loopIndex C
 0
 0
 ```
-(an equivalent in C: for (;; loopIndex[0] -= 1))
+(an equivalent in C: `for (;; loopIndex[0] -= 1)`)
 
 `_` `0` `0` and `.label` `0` `0` replaced by the compiler to jumps to the end of the heap where compiler generated code lives and does what it needs feels the most honest way currently.
 
