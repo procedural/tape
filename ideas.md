@@ -7,7 +7,6 @@ _if loopCount < 2 B
 .B 0
 0
 0
-  // if false code here ...
 ```
 ```c
 _forPostInc loopIndex C
