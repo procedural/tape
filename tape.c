@@ -36,7 +36,6 @@ main
 // a-Z is a part of named address
 // opcode 0 is reserved for program exit
 // opcode 1 is reserved for "jump to the second parameter address if the first parameter address value is non-zero, if 0 continue to the next opcode"
-// Binary numbers start with ;
-// For example:
-// ; 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+// ; is the start and the end of a binary number. For example:
+// ; 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 ;
 // No opcode is allowed to jump except opcode 1
