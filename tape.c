@@ -31,6 +31,7 @@ main
 // Every line is a 64-bit value
 // Spaces are optional
 // . is the start and the end of a named address declaration
+// ' is the start and the end of a character
 // 0-9 is a part of value
 // a-Z is a part of named address
 // opcode 0 is reserved for program exit
