@@ -6,9 +6,7 @@ _if_ loopCount < 2 : A
 0
 0
   // if true code here ...
-.A. 0
-0
-0
+.A.
 ```
 ```c
 _forPostInc_ loopIndex : B
@@ -31,7 +29,7 @@ _forPostDec_ loopIndex : B
 ```
 An equivalent in C: `for (;; loopIndex[0] -= 1)`
 
-`_compilerCommand_` `0` `0` and `.namedAddress.` `0` `0` replaced by the compiler to jumps to the end of the heap where compiler generated code lives and does what it needs feels the most honest way currently.
+`_compilerCommand_` `0` `0` and `.namedAddress. 0` `0` `0` replaced by the compiler to jumps to the end of the heap where compiler generated code lives and does what it needs feels the most honest way currently.
 
 * `?` is the start and the end of a user defined, compile-time replaced named value.
 
