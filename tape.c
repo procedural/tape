@@ -1,6 +1,6 @@
-1                   // 1 is a reserved opcode for jump
-jump                // jump if this parameter address value is non-zero; "jump" is replaced with 28, the value of address 28 is 1, so jump
-main                // to address 18
+1                    // 1 is a reserved opcode for jump
+jump                 // jump if this parameter address value is non-zero; "jump" is replaced with 28, the value of address 28 is 1, so jump
+main                 // to address 18
 .helloWorld. 'H
 'e
 'l
@@ -18,7 +18,7 @@ main                // to address 18
 .main. 2             // 2 is an opcode for, say, "print" procedure that takes two parameters addresses: an address to count and an address to the first character
 helloWorldCount
 helloWorld
-3                   // 3 is an opcode for, say, "decrement" procedure that takes one parameter address: an address to the value to decrement
+3                    // 3 is an opcode for, say, "decrement" procedure that takes one parameter address: an address to the value to decrement
 loopCount
 1
 loopCount
