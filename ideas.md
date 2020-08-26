@@ -1,29 +1,29 @@
 * `if` and `for`:
 ```c
-_if_ loopCount < 2 : B
+_if_ loopCount < 2 : A
 0
 0
   // if true code here ...
-.B. 0
+.A. 0
 0
 0
 ```
 ```c
-_forPostInc_ loopIndex : C
+_forPostInc_ loopIndex : B
 0
 0
   // loop body code here ...
-.C. 0
+.B. 0
 0
 0
 ```
 An equivalent in C: `for (;; loopIndex[0] += 1)`
 ```c
-_forPostDec_ loopIndex : C
+_forPostDec_ loopIndex : B
 0
 0
   // loop body code here ...
-.C. 0
+.B. 0
 0
 0
 ```
