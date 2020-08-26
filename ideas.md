@@ -1,4 +1,6 @@
-* `if` and `for`:
+* `_` is the start and the end of a compiler command.
+
+* C-like `if` and `for`:
 ```c
 _if_ loopCount < 2 : A
 0
