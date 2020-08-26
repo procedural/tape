@@ -31,7 +31,7 @@ _forPostDec loopIndex C
 
 `_` `0` `0` and `.namedAddress` `0` `0` replaced by the compiler to jumps to the end of the heap where compiler generated code lives and does what it needs feels the most honest way currently.
 
-* `#` compiler defined named values
+* `#` compiler defined named values.
 
 * `_clike` syntax sugar:
 ```c
@@ -40,3 +40,5 @@ _clike ouput = input1 #+ input2
 0
 0
 ```
+
+* `+tid` for a per thread offset, from 0 to N.
