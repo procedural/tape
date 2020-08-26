@@ -1,11 +1,12 @@
-1                    // 1 is a reserved opcode for jump
-jump                 // jump if this parameter address value is non-zero; "jump" is replaced with 28, the value of address 28 is 1, so jump
-main                 // to address 18
+2                    // 2 is a reserved opcode for jump
+main                 // to address 19
+jump                 // if this parameter address value is non-zero; the value of address 30 is 1, so jump
 .helloWorld. 'H'
 'e'
 'l'
 'l'
 'o'
+','
 ' '
 'w'
 'o'
@@ -14,15 +15,16 @@ main                 // to address 18
 'd'
 '!'
 '\n'
-.helloWorldCount. 13
-.main. 2             // 2 is an opcode for, say, "print" procedure that takes two parameters addresses: an address to count and an address to the first character
+.helloWorldCount. 14
+.main. 1
+3                    // 3 is an opcode for, say, "print" procedure that takes two parameters addresses: an address to count and an address to the first character
 helloWorldCount
 helloWorld
-3                    // 3 is an opcode for, say, "decrement" procedure that takes one parameter address: an address to the value to decrement
+4                    // 4 is an opcode for, say, "decrement" procedure that takes one parameter address: an address to the value to decrement
 loopCount
-1
-loopCount
-main
+2                    // to
+main                 // main
+loopCount            // if loopCount != 0
 0
 .loopCount. 3
 .jump. 1
@@ -35,7 +37,8 @@ main
 // 0-9 is a part of value
 // a-Z is a part of named address
 // opcode 0 is reserved for program exit
-// opcode 1 is reserved for "jump to the second parameter address if the first parameter address value is non-zero, if 0 continue to the next opcode"
+// opcode 1 is reserved for next opcode
+// opcode 2 is reserved for "jump to the first parameter address if the second parameter address value is non-zero; if zero, continue to the next opcode"
 // ; is the start and the end of a binary number. For example:
 // ; 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 ;
-// No opcode is allowed to jump except opcode 1
+// No opcode is allowed to jump except opcode 2
