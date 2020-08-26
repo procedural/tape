@@ -1,44 +1,44 @@
 * `if` and `for`:
 ```c
-_if loopCount < 2 B
+_if_ loopCount < 2 : B
 0
 0
   // if true code here ...
-.B 0
+.B. 0
 0
 0
 ```
 ```c
-_forPostInc loopIndex C
+_forPostInc_ loopIndex : C
 0
 0
   // loop body code here ...
-.C 0
+.C. 0
 0
 0
 ```
-(an equivalent in C: `for (;; loopIndex[0] += 1)`)
+An equivalent in C: `for (;; loopIndex[0] += 1)`
 ```c
-_forPostDec loopIndex C
+_forPostDec_ loopIndex : C
 0
 0
   // loop body code here ...
-.C 0
+.C. 0
 0
 0
 ```
-(an equivalent in C: `for (;; loopIndex[0] -= 1)`)
+An equivalent in C: `for (;; loopIndex[0] -= 1)`
 
-`_` `0` `0` and `.namedAddress` `0` `0` replaced by the compiler to jumps to the end of the heap where compiler generated code lives and does what it needs feels the most honest way currently.
+`_compilerCommand_` `0` `0` and `.namedAddress.` `0` `0` replaced by the compiler to jumps to the end of the heap where compiler generated code lives and does what it needs feels the most honest way currently.
 
-* `#` compiler defined named values.
+* `!namedValue!` user defined compile-time replaced named values.
 
-* `_clike` syntax sugar:
+* `_clike_` syntax sugar:
 ```c
-_clike ouput = input1 #+ input2
+_clike_ ouput = input1 !+! input2
 0
 0
 0
 ```
 
-* `+tid` for a per thread offset, from 0 to N.
+* `+tid+` for a per thread offset, from 0 to N.
