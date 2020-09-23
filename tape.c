@@ -17,10 +17,10 @@ jump                 // if this parameter address value is non-zero; the value o
 '\n'
 .helloWorldCount. 14
 .main. 1
-3                    // 3 is an opcode for, say, "print" procedure that takes two parameters addresses: an address to count and an address to the first character
+4                    // 4 is an opcode for, say, "print" procedure that takes two parameters addresses: an address to count and an address to the first character
 helloWorldCount
 helloWorld
-4                    // 4 is an opcode for, say, "decrement" procedure that takes one parameter address: an address to the value to decrement
+5                    // 5 is an opcode for, say, "decrement" procedure that takes one parameter address: an address to the value to decrement
 loopCount
 2                    // to
 main                 // main
