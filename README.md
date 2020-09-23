@@ -20,10 +20,10 @@ $ ./tape_compiler.cpp
 ............................................................1.1.   value: 10	line:      17	'\n'
 ............................................................111.   value: 14	line:      18	.helloWorldCount. 14
 ...............................................................1   value: 1	line:      19	.main. 1
-..............................................................11   value: 3	line:      20	3                    // 3 is an opcode for, say, "print" procedure that takes two parameters addresses: an address to count and an address to the first character
+.............................................................1..   value: 4	line:      20	4                    // 4 is an opcode for, say, "print" procedure that takes two parameters addresses: an address to count and an address to the first character
 ...........................................................1..1.   value: 18	line:      21	helloWorldCount
 .............................................................1..   value: 4	line:      22	helloWorld
-.............................................................1..   value: 4	line:      23	4                    // 4 is an opcode for, say, "decrement" procedure that takes one parameter address: an address to the value to decrement
+.............................................................1.1   value: 5	line:      23	5                    // 5 is an opcode for, say, "decrement" procedure that takes one parameter address: an address to the value to decrement
 ...........................................................111.1   value: 29	line:      24	loopCount
 ..............................................................1.   value: 2	line:      25	2                    // to
 ...........................................................1..11   value: 19	line:      26	main                 // main
