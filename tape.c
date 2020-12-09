@@ -41,4 +41,4 @@ loopCount            // if loopCount != 0
 // opcode 2 is reserved for "jump to the first parameter address if the second parameter address value is non-zero; if zero, continue to the next opcode"
 // ; is the start and the end of a binary number. For example:
 // ; 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 ;
-// No opcode is allowed to jump except opcode 2
+// No opcode is allowed to jump except opcode 2 and opcode 3 (see ideas.md)
